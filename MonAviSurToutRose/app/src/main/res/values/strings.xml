@@ -1,0 +1,48 @@
+<resources>
+    <!-- Appli -->
+    <string name="app_name">MonAvisSurToutLeRose</string>
+
+    <!-- Main Activity -->
+    <string name="main_Ajout">Ajout</string>
+    <string name="main_Liste">Liste</string>
+    <string name="main_Carte">Carte</string>
+
+    <!-- Ajout Activity -->
+    <string name="AddView_returnToMain">Accueil</string>
+    <string name="AddView_TitleView">Ajouter un avis :</string>
+    <string name="AddView_Auteur">Auteur *</string>
+    <string name="AddView_Title">Titre *</string>
+    <string name="AddView_Content">Contenu *</string>
+    <string name="AddView_Adresse">Adresse *</string>
+    <string name="AddView_chkMyPos">Récupérer ma position</string>
+    <string name="AddView_Latitude">Latitude</string>
+    <string name="AddView_Longitude">Longitude</string>
+    <string name="AddView_Submit">Ajouter un avis</string>
+
+    <!-- Liste Activity -->
+    <string name="ListView_returnToMain">Accueil</string>
+
+    <!-- Edit Activity -->
+    <string name="EditView_deleteReview">Supprimer</string>
+    <string name="EditView_Submit">Modifier</string>
+    <string name="EditView_TitleView">Modifier un avis :</string>
+    <string name="EditView_Auteur">Auteur</string>
+    <string name="EditView_Title">Titre</string>
+    <string name="EditView_Content">Contenu</string>
+    <string name="EditView_Adresse">Adresse</string>
+    <string name="EditView_Latitude">Latitude</string>
+    <string name="EditView_Longitude">Longitude</string>
+
+
+    <string name="EditView_returnToList">Retour Liste Avis</string>
+
+    <!-- Carte Activity -->
+    <string name="CardView_returnToMain">Accueil</string>
+    <string name="label_text">Vous êtes ici</string>
+    <string name="marker_title">Marseille</string>
+    <string name="marker_text">Commune du Sud-Est de la France, chef-lieu du département des Bouches-du-Rhône et de la région Provence-Alpes-Côte d\'Azur.</string>
+
+
+
+    <string name="form_toggle">ADD</string>
+</resources>

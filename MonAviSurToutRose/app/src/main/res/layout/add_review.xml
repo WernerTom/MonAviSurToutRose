@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/AddView_returnToMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/AddView_returnToMain" />
+
+    <RelativeLayout
+        android:layout_below="@+id/AddView_back"
+        android:id="@+id/AddView_add"
+        android:layout_marginTop="@dimen/block_padding"
+        android:layout_marginBottom="@dimen/block_padding"
+
+        android:padding="@dimen/block_padding"
+        android:background="@color/lightColor"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/AddView_TitleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/AddView_TitleView" />
+
+    <EditText
+        android:id="@+id/AddView_Auteur"
+        android:layout_below="@+id/AddView_TitleView"
+        android:hint="@string/AddView_Auteur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/AddView_Title"
+        android:layout_below="@+id/AddView_Auteur"
+        android:hint="@string/AddView_Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/AddView_Content"
+        android:layout_below="@+id/AddView_Title"
+        android:hint="@string/AddView_Content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/AddView_chkMyPos"
+        android:layout_below="@+id/AddView_Content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/AddView_chkMyPos"/>
+
+    <EditText
+        android:id="@+id/AddView_Adresse"
+        android:layout_below="@+id/AddView_chkMyPos"
+        android:hint="@string/AddView_Adresse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_below="@+id/AddView_Adresse"
+        android:id="@+id/AddView_LatLong"
+        android:layout_marginTop="@dimen/block_padding"
+        android:layout_marginBottom="@dimen/block_padding"
+        android:padding="@dimen/block_padding"
+        android:background="@color/lightColor"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/AddView_Latitude"
+            android:hint="@string/AddView_Latitude"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/AddView_Longitude"
+            android:layout_toRightOf="@+id/AddView_Latitude"
+            android:hint="@string/AddView_Longitude"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/AddView_Submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AddView_LatLong"
+        android:text="@string/AddView_Submit" />
+
+    </RelativeLayout>
+
+</LinearLayout>

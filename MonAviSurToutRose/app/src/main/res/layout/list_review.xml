@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/ListView_returnToMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ListView_returnToMain" />
+
+    <ListView
+        android:id="@+id/reviews_list"
+
+        android:padding="@dimen/block_padding"
+        android:background="@color/lightColor"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+    <ListView
+        android:id="@+id/reviews_listHidden"
+        android:visibility="invisible"
+        android:padding="@dimen/block_padding"
+        android:background="@color/lightColor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+</LinearLayout>

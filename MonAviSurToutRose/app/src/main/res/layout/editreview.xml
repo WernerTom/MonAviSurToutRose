@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/EditView_returnToList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/EditView_returnToList" />
+
+    <RelativeLayout
+        android:layout_below="@+id/EditView_back"
+        android:id="@+id/EditView"
+        android:padding="@dimen/block_padding"
+        android:background="@color/lightColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/EditView_idAvis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/EditView_TitleView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/EditView_TitleView" />
+
+        <RelativeLayout
+            android:layout_below="@+id/EditView_TitleView"
+            android:id="@+id/EditView_RelativeLayout_Auteur"
+            android:padding="@dimen/block_padding"
+            android:background="@color/lightColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/EditView_TextView_Auteur"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/EditView_Auteur" />
+
+            <EditText
+                android:id="@+id/EditView_Auteur"
+                android:hint="@string/EditView_Auteur"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/EditView_TextView_Auteur"/>
+
+            <TextView
+                android:id="@+id/EditView_TextView_TitleView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/EditView_Title"
+                android:layout_below="@+id/EditView_Auteur"/>
+
+            <EditText
+                android:id="@+id/EditView_Title"
+                android:hint="@string/EditView_Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/EditView_TextView_TitleView"/>
+
+            <TextView
+                android:id="@+id/EditView_TextView_Content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/EditView_Content"
+                android:layout_below="@+id/EditView_Title"/>
+
+            <EditText
+                android:id="@+id/EditView_Content"
+                android:hint="@string/EditView_Content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/EditView_TextView_Content"/>
+
+
+            <TextView
+                android:id="@+id/EditView_TextView_Adresse"
+                android:layout_below="@+id/EditView_Content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/EditView_Adresse" />
+
+            <EditText
+                android:id="@+id/EditView_Adresse"
+                android:layout_below="@+id/EditView_TextView_Adresse"
+                android:hint="@string/EditView_Adresse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <EditText
+                android:id="@+id/EditView_Latitude"
+                android:layout_below="@+id/EditView_Adresse"
+                android:hint="@string/EditView_Latitude"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/EditView_Longitude"
+                android:layout_below="@+id/EditView_Adresse"
+                android:layout_toRightOf="@+id/EditView_Latitude"
+                android:layout_alignRight="@id/AddView_Longitude"
+                android:hint="@string/EditView_Longitude"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content" />
+
+
+            <Button
+                android:text="@string/EditView_deleteReview"
+                android:id="@+id/EditView_deleteReview"
+                android:layout_below="@+id/EditView_Latitude"
+                android:layout_width="@dimen/button_padding"
+                android:layout_height="wrap_content"
+                />
+
+            <Button
+                android:id="@+id/EditView_Submit"
+                android:layout_below="@+id/EditView_Longitude"
+                android:layout_width="@dimen/button_padding"
+                android:layout_height="wrap_content"
+                android:text="@string/EditView_Submit"
+                android:layout_toRightOf="@id/EditView_deleteReview"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

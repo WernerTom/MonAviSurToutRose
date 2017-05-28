@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.weekydy.monavisurtoutrose.MainActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/mainPicture"
+            android:layout_width="fill_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="@dimen/normal_padding"
+            android:layout_gravity="center"
+            android:src="@drawable/logo_rose"/>
+
+        <Button
+            android:id="@+id/main_Ajout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/small_padding"
+            android:text="@string/main_Ajout"
+            android:layout_below="@+id/mainPicture"/>
+
+        <Button
+            android:id="@+id/main_Liste"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/normal_padding"
+            android:text="@string/main_Liste"
+            android:layout_below="@+id/main_Ajout"/>
+
+        <Button
+            android:id="@+id/main_Carte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/normal_padding"
+            android:text="@string/main_Carte"
+            android:layout_below="@+id/main_Liste"/>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
